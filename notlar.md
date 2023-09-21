@@ -12,3 +12,11 @@ namespace std {
 <h4>The class template span describes an object that can refer to a contiguous sequence of objects with the first element of the sequence at position zero.</h4>
 
 An instance of std::span<T> is a lightweight object that can refer to a contiguous sequence of objects starting at index zero. std::span is added to the standard library in C++20. However, it has been available to C++ developers as part of the GSL for quite some time now.
+
+<h3>std::span avantajları</h3>
+* Niyeti daha iyi anlatıyor.
+`` 
+void foo(const int *p, std::size_t n);
+void foo(std::span<int>)
+```
+
