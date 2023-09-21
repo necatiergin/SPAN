@@ -20,4 +20,12 @@ Niyeti daha iyi anlatıyor.
 void foo(const int *p, std::size_t n);
 void foo(std::span<int>)
 ```
+Kopyalaması kolay. Değerle bir fonksiyona aktarılması maliyeti düşük. Örneğin
+```sizeof(std::span) == sizeof(pointer) + sizeof(size_t)```
+olabilir.<br>
+- container'lara benzer bir arayüz (interface) sunuyor.
+- üye fonksiyonları kullanım kolaylığı sağlıyor.
+- _range base for loop_ ile kullanılabiliyor.
+- elemanların nerede tutulduğu _std::span_ için önemli değil. Elemanların _contigous memory_'de olması yeterli. (c arrays, std::array, std::vector, std::initilizer_list etc.)
+
 
