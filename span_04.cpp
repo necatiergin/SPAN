@@ -4,9 +4,9 @@
 
 int main()
 {
-	std::vector<int> vec{ 1, 2, 3, 4, 5, 6, 7};
+	std::vector<int> vec{ 1, 2, 3, 4, 5, 6, 7 };
 	std::span<int, 7> sp1{ vec }; // ok
-	assert(sp1.size() == vec.size());
+	assert(sp1.size() == vec.size()); //holds
 	//std::span<int, 10> sp2{ vec }; // u.b
 	//std::span<int, 5> sp3{ vec }; // u.b.
 	//std::span<int, 7> sp4{ vec, 7}; // invalid. no such ctor.
