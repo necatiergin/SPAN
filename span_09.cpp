@@ -27,8 +27,8 @@ int main()
 
 	print_span(s1);
 	print_span(s2);
-	//print_span(a); //gecersiz çıkarım yapılamaz
-	//print_span(vec); //gecersiz çıkarım yapılamaz
-	print_span(std::span{ vec }); //gecerli
-	print_span(std::span{ a }); //gecerli
+	//print_span(a); //invalid, cannot deduce
+	//print_span(vec); //invalid, cannot deduce
+	print_span(std::span{ vec }); //valid
+	print_span(std::span{ a }); // valid
 }
