@@ -2,7 +2,6 @@
 #include <span>
 #include <iostream>
 
-
 void print(std::span<int> sp)
 {
 	for (auto i : sp)
@@ -17,6 +16,6 @@ int main()
 
 	for (int i = 0; i < 10; ++i) {
 		print(x); //ub
-		ivec.push_back(i);
+		ivec.push_back(i);  //reallocation makes the pointer dangling
 	}
 }
