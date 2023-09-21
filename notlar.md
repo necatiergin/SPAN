@@ -15,6 +15,7 @@ An instance of std::span<T> is a lightweight object that can refer to a contiguo
 
 <h3>std::span avantajları</h3>
 - Niyeti daha iyi anlatıyor.
+
 ```
 void foo(const int *p, std::size_t n);
 void foo(std::span<int>)
