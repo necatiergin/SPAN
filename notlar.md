@@ -20,7 +20,7 @@ Niyeti daha iyi anlatıyor.
 void foo(const int *p, std::size_t n);
 void foo(std::span<int>)
 ```
-Kopyalaması kolay. Değerle bir fonksiyona aktarılması maliyeti düşük. Örneğin
+Kopyalaması kolay. Değerle bir fonksiyona aktarılması maliyeti düşük. Örneğin<br>
 ```sizeof(std::span) == sizeof(pointer) + sizeof(size_t)```
 olabilir.<br>
 - container'lara benzer bir arayüz (interface) sunuyor.
