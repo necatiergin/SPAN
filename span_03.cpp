@@ -4,8 +4,8 @@
 
 int main()
 {
-	//std::span<int, 5> sp1;
-	std::span<int, 0> sp2; //gecerli
+	//std::span<int, 5> sp1; //error
+	std::span<int, 0> sp2;
 	std::cout << "sp2.extent = " << sp2.extent << '\n';
 	std::span<int> sp3; //gecerli
 	std::cout << "sp3.extent = " << sp3.extent << '\n';
@@ -15,6 +15,6 @@ int main()
 	std::array<int, 3> ar{ 1, 2, 3 };
 	std::span<int> sp5{ ar };
 	std::cout << "sp5.extent = " << sp5.extent << '\n';
-	std::span sp6{ ar };
+	std::span sp6{ ar }; //CTAD
 	std::cout << "sp6.extent = " << sp6.extent << '\n';
 }
