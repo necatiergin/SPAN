@@ -23,9 +23,11 @@ void foo(std::span<int>)
 Kopyalaması kolay. Değerle bir fonksiyona aktarılması maliyeti düşük. Örneğin<br>
 ```sizeof(std::span) == sizeof(pointer) + sizeof(size_t)```
 olabilir.<br>
-- container'lara benzer bir arayüz (interface) sunuyor.
+- container'lara benzer bir arayüz _(interface)_ sunuyor.
 - üye fonksiyonları kullanım kolaylığı sağlıyor.
 - _range base for loop_ ile kullanılabiliyor.
-- elemanların nerede tutulduğu _std::span_ için önemli değil. Elemanların _contigous memory_'de olması yeterli. (c arrays, std::array, std::vector, std::initilizer_list etc.)
+- elemanların nerede tutulduğu _std::span_ için önemli değil. Elemanların _contigous memory_'de olması yeterli. (_c arrays, std::array, std::vector, std::initilizer_list etc._)
+
+Bir _span_ nesnesi görüntülediği _range_'in sahibi değil. _Dangling pointer_ oluşma riski var.
 
 
