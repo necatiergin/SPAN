@@ -9,4 +9,5 @@ int main()
 	std::span<int> vec_span{ ivec };
 	std::span<int> ar_span{ ar };
 	static_assert(std::same_as<decltype(vec_span), decltype(ar_span)>); //holds
+	//both spans are with dynamic extent
 }
