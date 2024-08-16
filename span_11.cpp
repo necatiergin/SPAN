@@ -15,7 +15,8 @@ int main()
 	std::span x{ ivec };
 
 	for (int i = 0; i < 10; ++i) {
-		print(x); //ub
+		print(x); 
 		ivec.push_back(i);  //reallocation makes the pointer dangling
+		std::cout << "cap = " << ivec.capacity() << '\n';
 	}
 }
