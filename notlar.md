@@ -30,4 +30,6 @@ olabilir.<br>
 
 Bir _span_ nesnesi görüntülediği _range_'in sahibi değil. _Dangling pointer_ oluşma riski var.
 
+default ctor ile oluşturulan bir _span_ nesnesi _dynamic extent_'e sahip. Böyle bir nesnenin _size_ üye fonksiyonu çağrıldığında _0_ değeri _empty_ fonksiyonu çağrıldığında _true_ değeri döndürür.
+
 
