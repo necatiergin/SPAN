@@ -10,4 +10,5 @@ int main()
 
 	std::cout << "spy.size()  = " << spy.size() << '\n';
 	std::cout << "spy.empty() = " << spy.size() << '\n';
+	std::cout << "spy.data() == nullptr = " << (spy.data() == nullptr) << '\n';
 }
