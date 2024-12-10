@@ -8,8 +8,8 @@ int main()
 	std::vector<int> ivec{ 2, 5, 8, 9 };
 
 	std::span<int, 10> sp1{ a };	//fixed extent
-	std::span<int> sp2{ a };		//dynamic extent
-	std::span<int> sp3{ivec};		//dynamic extent
+	std::span<int> sp2{ a };	//dynamic extent
+	std::span<int> sp3{ivec};	//dynamic extent
 
 	std::cout << "sizeof(sp1) = " << sizeof(sp1) << '\n';
 	std::cout << "sizeof(sp2) = " << sizeof(sp2) << '\n';
