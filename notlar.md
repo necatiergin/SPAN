@@ -32,4 +32,9 @@ Bir _span_ nesnesi görüntülediği _range_'in sahibi değil. _Dangling pointer
 
 _default ctor_ ile oluşturulan bir _span_ nesnesi _dynamic extent_'e sahip. Böyle bir nesnenin _size_ üye fonksiyonu çağrıldığında _0_ değeri _empty_ fonksiyonu çağrıldığında _true_ değeri döndürür. _static extent_'e sahip _std::span_ türünün _default ctor_'u yoktur.
 
+boş bir std::span nesnesinin 
+- data() fonksiyonu nullptr değerini döndürür.
+- size() fonksiyonu 0 değerini döndürür.
+- empty() fonksiyonu true değerini döndürür.
+
 
