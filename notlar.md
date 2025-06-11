@@ -9,9 +9,10 @@ namespace std {
 }
 ```
 
-<h4>The class template span describes an object that can refer to a contiguous sequence of objects with the first element of the sequence at position zero.</h4>
+_C++20_ standardı ile _C++_ standart kütüphanesine eklenmiş çok önemli bir sınıf şablonudur. 
+Bu sınıf, bellek üzerindeki ardışık nesnelere tür güvenli, boyut bilgili, düşük maliyetli bir erişim sağlar. 
+İşlevselliği bakımından _pointer_'ların (T*) ve C tarzı dizilerin modern ve güvenli bir alternatifi olarak düşünülebilir.
 
-An instance of std::span<T> is a lightweight object that can refer to a contiguous sequence of objects starting at index zero. std::span is added to the standard library in C++20. However, it has been available to C++ developers as part of the GSL for quite some time now.
 
 <h3>std::span avantajları</h3>
 Niyeti daha iyi anlatıyor.
